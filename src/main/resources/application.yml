@@ -1,0 +1,12 @@
+#content
+spring:
+  datasource:
+    url: &dbURL jdbc:mysql://db:3306/kotlin_crud_db
+    username: &dbUser root
+    password: &dbPassword 123456
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl_auto: update
